@@ -10,4 +10,4 @@ You will need to run the analysis from the project folder, and you can use the f
 ```bash
 make covid_report
 ```
-The output will be a file called 'covid_report.html' in the Rmd folder within the repository.
+The output will be a file called 'covid_inequality.html' in the Rmd folder within the repository.
