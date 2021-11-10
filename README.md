@@ -2,6 +2,14 @@
 
 My project is using county-level COVID-19 data from the Virginia Department of Health dataset 'VDH-COVID-19-PublicUseDataset-Cases.csv' and income inequality data from the 2000 Census dataset 'county5.csv'. The datasets will be analyzed using R.
 
+## R Code to restore the environment
+
+You will need to run the `renv` package to restore the environment by running the following R code in a session of R within the project folder:
+
+```R
+renv::restore()
+```
+
 
 ## Bash Code to conduct the analysis
 
