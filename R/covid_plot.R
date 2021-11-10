@@ -15,7 +15,7 @@ library("ggplot2")
 #load the data (packages used: readr, readxl)
 #-->Virginia Covid-19 outcome data (specify column names so 
 #-->that they follow the desired naming convention)
-covid_cases <- read_csv("../Data/VDH-COVID-19-PublicUseDataset-Cases.csv",
+covid_cases <- read_csv("Data/VDH-COVID-19-PublicUseDataset-Cases.csv",
                         skip=1,
                         col_names=c("report_date", "FIPS",
                                     "locality", "VDH_district",
@@ -24,7 +24,7 @@ covid_cases <- read_csv("../Data/VDH-COVID-19-PublicUseDataset-Cases.csv",
 #-->Census Income Data (need to specify which rows and 
 #-->columns and list column names and types because of 
 #-->the formatting in the original dataset)
-income <- read_excel("../Data/county5.xls", 
+income <- read_excel("Data/county5.xls", 
                      range="MG2000!B2824:K2959", 
                      col_names=c("county", "FIPS", 
                                  "GINI", "mean_income"), 
