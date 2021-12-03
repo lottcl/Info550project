@@ -62,7 +62,7 @@ head(VA_covid)
 #create a spaghetti plot (packages used: ggplot2)
 #-->create a plot of deaths per week, stratified by 
 #-->the GINI coefficient quartiles, then output as a png
-png(here::here("output", "covid_plot.png"))
+dev.copy(png, here::here("output", "covid_plot.png"))
   ggplot(VA_covid, 
          aes(x=report_week, y=deaths, 
              group=FIPS, color=factor(FIPS))) + 

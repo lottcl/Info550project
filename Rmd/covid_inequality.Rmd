@@ -12,7 +12,7 @@ knitr::opts_knit$set(root.dir = here::here())
 ```
 
 ```{r, echo = FALSE}
-knitr::include_graphics(here::here("output", "covid_plot.png"))
+knitr::include_graphics("../output/covid_plot.png")
 ```
 
 To analyze the COVID-19 outcomes and inequality in Virginia, I combined the COVID outcomes data from Virginia with income data for Virginia from the 2000 census. The income data and COVID-19 data were both separated geographically by county (indicated by FIPS code), and the income data included a calculated GINI coefficient for each county. I calculated the quantiles of the GINI coefficients from the Virginia counties and split the counties into quartiles based on where they fell in the distribution of inequality. I then graphed the COVID-19 deaths over time (by week) for each county and stratified the graphs by the predetermined inequality quartiles. Surprisingly, the counties with the highest COVID-19 deaths were also in the lowest inequality quartiles. The deaths are currently represented as raw numbers, not percent of the population, so this may be impacting the trends.
